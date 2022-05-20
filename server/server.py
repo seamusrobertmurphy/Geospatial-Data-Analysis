@@ -3,7 +3,7 @@ import requests
 from dotenv import load_dotenv
 import os
 
-api_key = os.getenv("NASA_API-KEY")
+api_key = os.getenv("NASA_API_KEY")
 
 load_dotenv()
 
