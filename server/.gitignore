@@ -3,8 +3,10 @@
 # dependencies
 /node_modules
 /venv
+/.venv
 /.pnp
 .pnp.js
+venv
 
 # testing
 /coverage
