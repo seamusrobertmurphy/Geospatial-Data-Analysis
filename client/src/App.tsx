@@ -1,26 +1,12 @@
-import React, { useState, useEffect } from "react";
+import * as React from "react";
 import "./App.css";
+import { Map } from "./components/Map";
 
 const App = () => {
-  const [data, setData] = useState<any>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      await fetch("/data")
-        .then((response) => response.json())
-        .then((data) => {
-          setData(data);
-          console.log(data);
-        });
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <>
-      <h1>{data.description}</h1>
-      <a href={data.link}>Click me</a>
+      <h1 className="center">Frontend Service</h1>
+      <Map />
     </>
   );
 };
