@@ -1,0 +1,8 @@
+docker build -t geo-frontend .
+docker build -t geo-backend .
+
+docker tag 46a79ceca0dc 144817152095.dkr.ecr.eu-west-1.amazonaws.com/geospatial-frontend:0.0.1
+docker tag 81e5f2a4ff00 144817152095.dkr.ecr.eu-west-1.amazonaws.com/geospatial-backend:0.0.1
+
+docker push 144817152095.dkr.ecr.eu-west-1.amazonaws.com/geospatial-frontend:0.0.1
+docker push 144817152095.dkr.ecr.eu-west-1.amazonaws.com/geospatial-backend:0.0.1
