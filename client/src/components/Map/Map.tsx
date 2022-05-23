@@ -24,7 +24,7 @@ export const Map = () => {
 
   async function fetchData() {
     try {
-      const res = await axios.get("geospatial-backend/data");
+      const res = await axios.get("/data");
       setData(res.data);
       console.log(res);
     } catch (error) {
